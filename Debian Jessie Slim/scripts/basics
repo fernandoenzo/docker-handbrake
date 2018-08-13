@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -x  # All executed commands are printed to the terminal
+
+apt-get update
+dpkg -i libnotify1_0.5.0-2ubuntu1_amd64.deb handbrake-gtk_0.9.5-1~getdeb2~natty_amd64.deb ; apt-get -f -y install
+
+rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /libnotify1* /handbrake*
+
