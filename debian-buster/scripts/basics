@@ -1,9 +1,0 @@
-#!/bin/bash
-
-set -x  # All executed commands are printed to the terminal
-
-apt-get update ; apt-get install multiarch-support iso-codes liborc-0.4-0
-dpkg -i libnotify1_0.5.0-2ubuntu1_amd64.deb handbrake-gtk_0.9.5-1~getdeb2~natty_amd64.deb libgstreamer0.10-0_0.10.36-1.5_amd64.deb libgstreamer-plugins-base0.10-0_0.10.36-2_amd64.deb ; apt-get -f -y install
-
-rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /libnotify1* /handbrake* /libgstreamer*
-
